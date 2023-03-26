@@ -25,5 +25,9 @@ document.getElementById('btn-apply-two').addEventListener('click', function(){
     let DiscountTwoFieldValue = DiscountTwoField.value;
     if (DiscountTwoFieldValue == "DISC30") {
         discountPriceTwo.innerText = applyDiscountTwoPrice;
+        realPriceTwo.style.textDecoration = "line-through";
+    }
+    else {
+        alert('Sorry! Please input the valid code.');
     }
 })
