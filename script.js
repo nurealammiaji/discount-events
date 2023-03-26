@@ -8,4 +8,9 @@ document.getElementById('btn-apply').addEventListener('click', function(){
     let discountPriceValue = discountPrice.innerText;
     let discountPriceValueNumeric = parseFloat(discountPriceValue);
     console.log(discountPriceValueNumeric);
+
+    let applyDiscount = realPriceValueNumeric / 100;
+    let thirtyPercent = applyDiscount * 30;
+    discountPrice.innerText = thirtyPercent;
+    console.log(thirtyPercent.toFixed(2));
 })
