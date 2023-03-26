@@ -1,9 +1,9 @@
-document.getElementById('btn-apply').addEventListener('click', function(){
-    let realPrice = document.getElementById('real-price');
+document.getElementById('btn-apply-one').addEventListener('click', function(){
+    let realPrice = document.getElementById('real-price-one');
     let realPriceValue = realPrice.innerText;
     let realPriceValueNumeric = parseFloat(realPriceValue);
 
-    let discountPrice = document.getElementById('discount-price');
+    let discountPrice = document.getElementById('discount-price-one');
     let discountPriceValue = discountPrice.innerText;
     let discountPriceValueNumeric = parseFloat(discountPriceValue);
 
