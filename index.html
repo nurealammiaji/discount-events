@@ -12,13 +12,24 @@
         <h1 class="text-3xl text-center font-medium my-5 py-3 mx-auto bg-rose-100 w-1/2 rounded-lg">Welcome to Discount Events</h1>
     </header>
     <main>
-        <div class="text-center">
-            <div class="bg-purple-300 py-40 px-32 border-2 hover:border-purple-600 w-20 mx-auto mt-10 rounded-lg"></div>
-            <h2 class="text-2xl text-center my-5 font-medium">Price: $<span id="real-price">1000</span></h2>
-            <button id="btn-apply" class="px-8 py-3 bg-green-400 hover:bg-blue-400 rounded font-bold">Apply 30%</button>
-            <hr class="w-40 mt-10 mx-auto">
-            <h2 class="text-xl text-center mt-5 italic">Please Pay: $<span id="discount-price">00</span></h2>
-        </div>
+        <section class="grid grid-cols-2 w-9/12 mx-auto">
+            <div class="text-center">
+                <div class="bg-purple-300 py-40 px-32 border-2 hover:border-purple-600 w-20 mx-auto mt-10 rounded-lg"></div>
+                <h2 class="text-xl font-medium my-5">Sample Product 1</h2>
+                <h2 class="text-xl my-5 font-medium">Price: $<span id="real-price">1000</span></h2>
+                <button id="btn-apply" class="px-8 py-3 bg-green-400 hover:bg-blue-400 rounded font-bold">Apply 30%</button>
+                <hr class="w-40 mt-10 mx-auto">
+                <h2 class="text-xl mt-5 italic font-medium">Please Pay: $<span id="discount-price">00</span></h2>
+            </div>
+            <div class="text-center">
+                <div class="bg-purple-300 py-40 px-32 border-2 hover:border-purple-600 w-20 mx-auto mt-10 rounded-lg"></div>
+                <h2 class="text-xl font-medium my-5">Sample Product 2</h2>
+                <h2 class="text-xl my-5 font-medium">Price: $<span>1000</span></h2>
+                <button class="px-8 py-3 bg-green-400 hover:bg-blue-400 rounded font-bold">Apply 30%</button>
+                <hr class="w-40 mt-10 mx-auto">
+                <h2 class="text-xl mt-5 italic font-medium">Please Pay: $<span>00</span></h2>
+            </div>
+        </section>
     </main>
 
     <!-- JS Script -->
