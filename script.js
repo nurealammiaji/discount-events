@@ -1,15 +1,29 @@
 document.getElementById('btn-apply-one').addEventListener('click', function(){
-    let realPrice = document.getElementById('real-price-one');
-    let realPriceValue = realPrice.innerText;
-    let realPriceValueNumeric = parseFloat(realPriceValue);
+    let realPriceOne = document.getElementById('real-price-one');
+    let realPriceOneElement = realPriceOne.innerText;
+    let realPriceOneElementNumeric = parseFloat(realPriceOneElement);
 
-    let discountPrice = document.getElementById('discount-price-one');
-    let discountPriceValue = discountPrice.innerText;
-    let discountPriceValueNumeric = parseFloat(discountPriceValue);
+    let applyDiscountOne = realPriceOneElementNumeric / 100 * 30;
+    let applyDiscountOnePrice = realPriceOneElementNumeric - applyDiscountOne;
 
-    let applyDiscount = realPriceValueNumeric / 100 * 30;
-    let applyDiscountPrice = realPriceValueNumeric - applyDiscount;
-    discountPrice.innerText = applyDiscountPrice;
-    realPrice.style.textDecoration= "line-through";
+    let discountPriceOne = document.getElementById('discount-price-one');
+    discountPriceOne.innerText = applyDiscountOnePrice;
+    realPriceOne.style.textDecoration= "line-through";
+})
 
+document.getElementById('btn-apply-two').addEventListener('click', function(){
+    let realPriceTwo = document.getElementById('real-price-two');
+    let realPriceTwoElement = realPriceTwo.innerText;
+    let realPriceTwoElementNumeric = parseFloat(realPriceTwoElement);
+
+    let applyDiscountTwo = realPriceTwoElementNumeric / 100 * 30;
+    let applyDiscountTwoPrice = realPriceTwoElementNumeric - applyDiscountTwo;
+
+    let discountPriceTwo = document.getElementById('discount-price-two');
+
+    let DiscountTwoField = document.getElementById('discount-two-field');
+    let DiscountTwoFieldValue = DiscountTwoField.value;
+    if (DiscountTwoFieldValue == "DISC30") {
+        discountPriceTwo.innerText = applyDiscountTwoPrice;
+    }
 })
