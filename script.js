@@ -10,4 +10,6 @@ document.getElementById('btn-apply').addEventListener('click', function(){
     let applyDiscount = realPriceValueNumeric / 100 * 30;
     let applyDiscountPrice = realPriceValueNumeric - applyDiscount;
     discountPrice.innerText = applyDiscountPrice;
+    realPrice.style.textDecoration= "line-through";
+
 })
